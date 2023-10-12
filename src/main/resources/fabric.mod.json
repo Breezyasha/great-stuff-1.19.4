@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "greatstuff",
+	"version": "${version}",
+	"name": "Great Stuff",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/greatstuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.greatstuff.GreatStuffMod"
+		],
+		"client": [
+			"com.greatstuff.GreatStuffClient"
+		],
+		"fabric-datagen": [
+			"com.greatstuff.GreatStuffModDataGenerator"
+		]
+	},
+	"mixins": [
+		"greatstuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
